@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Información del paqueadero</ion-title>
+    <ion-title>Elección del paqueadero</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -27,21 +27,9 @@
 
 <ion-content padding>
 
-<br>
-  <p>
-      PARQUEADERO COUNTRY
-   </p>
-  Direccion destino:
-  <ion-item>
-      <ion-label stacked></ion-label>
-      <ion-input type="text" [value]="Caption" [(ngModel)]="Caption"></ion-input>
- </ion-item>
-<br>
- <ion-buttons end>
-    <button ion-button icon-only (click) ="alert()"  >
-     <ion-icon name="search"></ion-icon>  
-   </button>
-  </ion-buttons>
+
+ 
+
 
 
 
@@ -85,39 +73,21 @@
     <ion-label>Hora Estimada</ion-label>
     <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" ></ion-datetime>
   </ion-item>
-
-  <img src="https://ionicframework.com/dist/preview-app/www/assets/img/badu-live.png">
+  Direccion destino:
+  <ion-item>
+      <ion-label stacked></ion-label>
+      <ion-input type="text" [value]="Caption" [(ngModel)]="Caption"></ion-input>
+ </ion-item>
+ <br>
+ 
+ <ion-buttons end>
+  <button ion-button icon-only (click) ="alert()"  >
+   <ion-icon name="search"></ion-icon>  
+ </button>
+</ion-buttons>
+  <img src="http://www.lacandelaria.gov.co/sites/lacandelaria.gov.co/files/localidad/mapas/1357125000_818500_1357133640_noticia_normal.jpg">
 
 
 
   
-
-     <h6>ESTADISTICAS</h6> 
- 
- 
-
-
-  <h2>Ingreso</h2>
-  <ion-item>
-    <ion-label>Día</ion-label>
-    <ion-datetime displayFormat="DDDD DD/MMMM/YY" pickerFormat="DD/MMMM/YY" ></ion-datetime>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>Hora Estimada</ion-label>
-    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" ></ion-datetime>
-  </ion-item>
-  
-  <h2>Salida</h2>
-  <ion-item>
-    <ion-label>Día</ion-label>
-    <ion-datetime displayFormat="DDDD DD/MMMM/YY" pickerFormat="DD/MMMM/YY" ></ion-datetime>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>Hora Estimada</ion-label>
-    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" ></ion-datetime>
-  </ion-item>
-
-  <img src="https://ionicframework.com/dist/preview-app/www/assets/img/badu-live.png">
 </ion-content>

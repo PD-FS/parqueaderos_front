@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the TypeParqueaderosPage page.
+ * Generated class for the AgendaParqueaderoPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-type-parqueaderos',
-  templateUrl: 'type-parqueaderos.html',
+  selector: 'page-agenda-parqueadero',
+  templateUrl: 'agenda-parqueadero.html',
 })
-export class TypeParqueaderosPage {
+export class AgendaParqueaderoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TypeParqueaderosPage');
+    console.log('ionViewDidLoad AgendaParqueaderoPage');
   }
 
 }
