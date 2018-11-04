@@ -1,0 +1,123 @@
+<!--
+  Generated template for the ParInformacionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Información del paqueadero</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<!--
+<ion-slides>
+    <ion-slide>
+      <h1>Slide 1</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 2</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides>
+-->
+
+<ion-content padding>
+
+<br>
+  <p>
+      PARQUEADERO COUNTRY
+   </p>
+  Direccion destino:
+  <ion-item>
+      <ion-label stacked></ion-label>
+      <ion-input type="text" [value]="Caption" [(ngModel)]="Caption"></ion-input>
+ </ion-item>
+<br>
+ <ion-buttons end>
+    <button ion-button icon-only (click) ="alert()"  >
+     <ion-icon name="search"></ion-icon>  
+   </button>
+  </ion-buttons>
+
+
+
+<br>
+
+<H6>Tipos de Vehiculos</H6>    
+<FORM name="validacion" action="http://www.tecnun.es/cgi-bin/ii/CGI0.exe" method="POST" target="resultado">
+ <!-- <P>El campo sólo permite letras y números:  <INPUT type="text" name="entrada"> -->       
+  <P><INPUT type="button" value="Ver tipos de Vehiculos" onClick="validate(entrada)"></P>
+</FORM>
+
+
+<!--
+
+<ion-buttons end>
+    <button ion-button icon-only (click) ="alert()"  >
+     <ion-icon name="veh"></ion-icon>
+   </button>
+  </ion-buttons>
+-->
+
+
+  <h6>Ingreso</h6>
+  <ion-item>
+    <ion-label>Día</ion-label>
+    <ion-datetime displayFormat="DDDD DD/MMMM/YY" pickerFormat="DD/MMMM/YY" ></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Hora Estimada</ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" ></ion-datetime>
+  </ion-item>
+  
+  <h6>Salida</h6>
+  <ion-item>
+    <ion-label>Día</ion-label>
+    <ion-datetime displayFormat="DDDD DD/MMMM/YY" pickerFormat="DD/MMMM/YY" ></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Hora Estimada</ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" ></ion-datetime>
+  </ion-item>
+
+  <img src="https://ionicframework.com/dist/preview-app/www/assets/img/badu-live.png">
+
+
+
+  
+
+     <h6>ESTADISTICAS</h6> 
+ 
+ 
+
+
+  <h2>Ingreso</h2>
+  <ion-item>
+    <ion-label>Día</ion-label>
+    <ion-datetime displayFormat="DDDD DD/MMMM/YY" pickerFormat="DD/MMMM/YY" ></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Hora Estimada</ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" ></ion-datetime>
+  </ion-item>
+  
+  <h2>Salida</h2>
+  <ion-item>
+    <ion-label>Día</ion-label>
+    <ion-datetime displayFormat="DDDD DD/MMMM/YY" pickerFormat="DD/MMMM/YY" ></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Hora Estimada</ion-label>
+    <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" ></ion-datetime>
+  </ion-item>
+
+  <img src="https://ionicframework.com/dist/preview-app/www/assets/img/badu-live.png">
+</ion-content>
